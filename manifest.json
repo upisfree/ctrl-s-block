@@ -1,0 +1,16 @@
+{
+  "name": "Ctrl+S blocker",
+  "description": "Block Ctrl+S!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["background.js"]
+  }],
+  "icons": {
+    "48": "icon.png"
+  }
+}
